@@ -14,7 +14,7 @@ public class ExampleServlet extends HttpServlet {
 
     public void init(ServletConfig servletConfig) throws ServletException {
 
-        message = "Hello World";
+        message = "Hello World2";
 
     }
 
@@ -36,7 +36,6 @@ public class ExampleServlet extends HttpServlet {
 
     }
 
-
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -48,8 +47,5 @@ public class ExampleServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("<h1>" + message + "</h1>");
     }
-
-
-
 
 }
